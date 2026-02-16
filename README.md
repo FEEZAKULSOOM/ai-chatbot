@@ -6,7 +6,7 @@
 <p align="center">
   <a href="#-features"><img src="https://img.shields.io/badge/Features-6366f1?style=for-the-badge&logo=starship&logoColor=white"/></a> •
   <a href="#-live-demo"><img src="https://img.shields.io/badge/Live_Demo-0ea5e9?style=for-the-badge&logo=github&logoColor=white"/></a> •
-  <a href="#-documentation"><img src="https://img.shields.io/badge/Documentation-8b5cf6?style=for-the-badge&logo=gitbook&logoColor=white"/></a>
+
 </p>
 
 [![React](https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react)](https://react.dev)
@@ -70,7 +70,7 @@
 
 ### 🌐 **Experience the AI Assistant Live**
 
-**👉 [https://yourusername.github.io/ai-chat-assistant](https://feeza-chatbot.netlify.app/)**
+**👉 [https://feeza-chatbot.netlify.app](https://feeza-chatbot.netlify.app/)**
 
 | Test Credentials | |
 |-----------------|-|
