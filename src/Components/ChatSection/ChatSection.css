@@ -1,0 +1,259 @@
+/* ========== MAIN CHAT CONTAINER ========== */
+.chatSection {
+    background-color: var(--background-color); /* Theme-based background */
+    height: 100vh;                              /* Full viewport height */
+    flex: 1;                                     /* Take remaining width */
+}
+
+/* ========== TOP SECTION - Messages Area ========== */
+.topSection {
+    width: 100%;
+    height: 75vh;                                /* 75% of viewport height */
+}
+
+/* ========== BOTTOM SECTION - Input Area ========== */
+.bottomSection {
+    width: 100%;
+    height: 25vh;                                /* 25% of viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* ========== WELCOME HEADINGS ========== */
+.headings {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 2vmax;                            /* Responsive font size */
+    text-align: center;
+}
+
+/* Main title "HELLO MASTER" */
+.headings span:nth-child(1) {
+    font-size: 3.2em;
+    font-weight: 600;
+    background: linear-gradient(90deg, #8b5cf6, #fb923c); /* Purple to orange */
+    background-clip: text;
+    color: transparent;
+}
+
+/* Subtitle "I'm Your Assistant" */
+.headings span:nth-child(2) {
+    font-size: 2.2em;
+    font-weight: 600;
+    background: linear-gradient(90deg, #8b5cf6, #fb923c);
+    background-clip: text;
+    color: transparent;
+}
+
+/* Question "How can I help..." */
+.headings span:nth-child(3) {
+    font-size: 1.4em;
+    font-weight: 600;
+    background: linear-gradient(90deg, #8b5cf6, #fb923c);
+    opacity: 0.8;
+    background-clip: text;
+    color: transparent;
+}
+
+/* ========== INPUT FIELD ========== */
+.bottomSection input {
+    width: 50%;
+    height: 60px;
+    padding: 20px;
+    font-size: 20px;
+    background-color: var(--btn-background-color);
+    color: var(--btn-color);
+    border-radius: 40px;
+    outline: none;
+    border: none;
+}
+
+/* ========== SEND BUTTON ========== */
+.sendBtn {
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--btn-background-color);
+    transition: all 0.5s;
+    cursor: pointer;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+}
+
+.sendBtn:hover {
+    background-color: var(--hover-btn-background-color);
+}
+
+.sendBtn svg {
+    width: 100%;
+    height: 100%;
+    color: var(--btn-color);
+}
+
+/* ========== MESSAGE STYLES ========== */
+
+/* User message container */
+.userBox {
+    display: flex;
+    gap: 20px;
+    align-items: start;
+    color: var(--color);
+    font-size: 18px;
+}
+
+/* AI message container */
+.aiBox {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    color: var(--color);
+    font-size: 18px;
+}
+
+/* Icon styles for both message types */
+.userBox svg, .aiBox svg {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;              /* CRITICAL: prevents icon shrinking */
+    min-width: 32px;
+    min-height: 35px !important;
+    filter: drop-shadow(0 0 4px currentColor); /* Subtle glow */
+}
+
+/* AI message content with scrolling for long responses */
+.aiBox p {
+    overflow: auto;
+    width: 100%;
+    max-height: 300px;
+    scrollbar-width: none;        /* Hide scrollbar Firefox */
+}
+
+/* Output container */
+.outputRes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    padding: 40px 20px;
+    height: 100%;
+}
+
+/* ========== LOADING ANIMATION ========== */
+.loading {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 10px 0;
+}
+
+/* Shimmer loading bars */
+.loading hr {
+    height: 16px;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(
+        90deg,
+        #e9e9e9 0%,
+        #ffffff 30%,              /* Pure white for stronger glow */
+        #ffffff 50%,               /* Extended white section */
+        #f0f0f0 70%,
+        #e9e9e9 100%
+    );
+    background-size: 250% 100%;   /* Increased for longer glow travel */
+    animation: shimmer 1.5s infinite linear; /* Faster, continuous */
+    opacity: 1;                    /* Full opacity for maximum visibility */
+    box-shadow: 0 0 5px rgba(255,255,255,0.5); /* Extra glow */
+}
+
+/* ========== DARK MODE LOADING ========== */
+@media (prefers-color-scheme: dark) {
+    .loading hr {
+        background: linear-gradient(
+            90deg,
+            #2a2a2a 0%,
+            #5a5a5a 25%,           /* Brighter highlight */
+            #8a8a8a 50%,           /* Much brighter in middle */
+            #5a5a5a 75%,
+            #2a2a2a 100%
+        );
+        background-size: 250% 100%;
+        opacity: 1;
+        box-shadow: 0 0 8px rgba(255,255,255,0.3); /* Glow effect */
+    }
+}
+
+/* ========== MICROPHONE BUTTON ========== */
+.mic-btn {
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--btn-background-color);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+}
+
+.mic-btn svg {
+    width: 100%;
+    height: 100%;
+    color: var(--btn-color);
+}
+
+.mic-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 25px var(--hover-btn-background-color);
+}
+
+/* Active listening state */
+.mic-btn.listening {
+    animation: pulse 1.5s infinite;
+}
+
+/* ========== ANIMATIONS ========== */
+
+/**
+ * Pulse animation for microphone when listening
+ * Creates a ripple effect
+ */
+@keyframes pulse {
+    0%, 100% { 
+        transform: scale(1); 
+        box-shadow: 0 0 0 0 rgba(100, 108, 109, 0.306); 
+    }
+    50% { 
+        transform: scale(1.1); 
+        box-shadow: 0 0 0 15px rgba(239, 68, 68, 0); 
+    }
+}
+
+/**
+ * Shimmer animation for loading bars
+ * Creates a moving light effect
+ */
+@keyframes shimmer {
+    0% {
+        background-position: 150% 0;  /* Start further right */
+    }
+    100% {
+        background-position: -150% 0;  /* End further left */
+    }
+}
+
+/* ========== RESPONSIVE BREAKPOINTS ========== */
+@media (max-width: 650px) {
+    .headings {
+        font-size: 1vmax;               /* Smaller text on mobile */
+        padding: 10px;
+    }
+}

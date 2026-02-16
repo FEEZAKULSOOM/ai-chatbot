@@ -1,0 +1,98 @@
+/* ========== SIDEBAR CONTAINER ========== */
+.sideBar {
+    height: 100vh;                      /* Full viewport height */
+    background-color: var(--background-color); /* Theme-based background */
+    color: var(--color);                  /* Theme-based text color */
+    display: flex;
+    flex-direction: column;
+    scrollbar-width: none;               /* Hide scrollbar Firefox */
+    position: relative;
+    width: auto;
+}
+
+/* ========== FIXED HEADER SECTION ========== */
+.sidebar-header {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;                      /* Never shrinks - always visible */
+    padding: 20px 10px 10px 10px;
+    position: sticky;                    /* Sticks to top on scroll */
+    top: 0;
+    background-color: var(--background-color); /* Match sidebar background */
+    z-index: 100;                         /* Stay above content */
+    width: 100%;
+    gap: 12px;
+}
+
+/* ========== SCROLLABLE CONTENT AREA ========== */
+.sidebar-content {
+    flex: 1;                              /* Takes remaining space */
+    overflow-y: auto;                     /* Enables scrolling for many items */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 10px 20px 10px;
+    scrollbar-width: none;                 /* Hide scrollbar Firefox */
+}
+
+/* Hide scrollbar for Chrome/Safari */
+.sidebar-content::-webkit-scrollbar {
+    display: none;
+}
+
+/* ========== ICON STYLES ========== */
+.sideBar svg {
+    color: var(--color);
+    width: 30px;
+    height: 30px;
+}
+
+/* Hamburger menu icon */
+#ham {
+    margin-left: 16px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+}
+
+/* ========== MENU ITEMS ========== */
+.newChat {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-start;          /* Align content to left */
+    background-color: #747779;             /* Neutral gray background */
+    padding: 15px;
+    border-radius: 30px;
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+    width: 100%;
+}
+
+.recentChats {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-start;          /* Align content to left */
+    padding: 15px;
+    border-radius: 30px;
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* ========== HOVER STATES ========== */
+.recentChats:hover {
+    background-color: #747779;             /* Match newChat background */
+}
+
+.newChat:hover {
+    background-color: #7f8284;             /* Slightly lighter on hover */
+}
+
+/* ========== RESPONSIVE BREAKPOINTS ========== */
+@media (max-width: 600px) {
+    .sideBar {
+        display: none;                     /* Hide sidebar on mobile */
+    }
+}

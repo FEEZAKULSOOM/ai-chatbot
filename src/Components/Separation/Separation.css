@@ -1,0 +1,7 @@
+/* ========== VERTICAL SEPARATOR ========== */
+.separation {
+    width: 6px;                          /* Thin vertical line */
+    height: 100vh;                        /* Full viewport height */
+    background-color: #1e293b;             /* Dark slate color */
+    /* No content - purely visual */
+}

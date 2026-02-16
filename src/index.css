@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* ========== GLOBAL RESETS ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif; /* Consistent typography across app */
+}
+
+/* ========== ROOT LAYOUT ========== */
+#root {
+  display: flex; /* Creates horizontal layout for sidebar + chat */
+}
+
+/* ========== LIGHT MODE THEME ========== */
+@media (prefers-color-scheme: light) {
+  body {
+    background: linear-gradient(
+      135deg,
+      #f0f9ff 0%,
+      #e6f0fa 50%,
+      #f5f0ff 100%
+    ); /* Soft, airy gradient for light mode */
+  }
+}
+
+/* ========== DARK MODE THEME ========== */
+@media (prefers-color-scheme: dark) {
+  body {
+    background: linear-gradient(
+      135deg,
+      #0a1525 0%,
+      #101b2b 50%,
+      #1a1a2e 100%
+    ); /* Deep space gradient for dark mode */
+  }
+}
+
+/* ========== THEME VARIABLES ========== */
+.darkMode {
+  --color: white;                      /* Primary text color */
+  --background-color: #111827;         /* Main background (deep navy) */
+  --btn-background-color: white;       /* Button background */
+  --btn-color: #1e293b;                /* Button text/icon color */
+  --hover-btn-background-color: #f1f5f9c4; /* Hover state with opacity */
+}
+
+.lightMode {
+  --color: black;                       /* Primary text color */
+  --background-color: #ffffffbf;         /* Main background (semi-transparent white) */
+  --btn-background-color: #1e293b;       /* Button background (slate) */
+  --btn-color: white;                    /* Button text/icon color */
+  --hover-btn-background-color: #334155e2; /* Hover state with opacity */
+}
+
+/* ========== RESPONSIVE BREAKPOINTS ========== */
+@media (max-width: 600px) {
+  .separation {
+    display: none; /* Hide separator on mobile for better space utilization */
+  }
+}

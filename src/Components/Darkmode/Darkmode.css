@@ -1,0 +1,27 @@
+/* ========== DARK MODE BUTTON ========== */
+.darkModeBtn {
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    border-radius: 50%;                  /* Circular button */
+    border: none;
+    background-color: var(--btn-background-color); /* Theme-based background */
+    transition: all 0.5s;                  /* Smooth hover transition */
+    cursor: pointer;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4); /* Subtle depth shadow */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Hover effect */
+.darkModeBtn:hover {
+    background-color: var(--hover-btn-background-color); /* Theme-based hover */
+}
+
+/* Icon styles */
+.darkModeBtn svg {
+    width: 100%;
+    height: 100%;
+    color: var(--btn-color);               /* Theme-based icon color */
+}
