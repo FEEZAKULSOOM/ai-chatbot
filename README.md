@@ -338,7 +338,7 @@ If you like this project, please consider giving it a ⭐ on GitHub!
 
 ### 📬 **Contact Me**
 
-[![Email](https://img.shields.io/badge/Email-feezakulsoom42@%40gmail.com-6366f1?style=for-the-badge&logo=gmail)](mailto:feezakulsoom42@gmail.com)
+[![Email](https://img.shields.io/badge/Email-feezakulsoom42%40gmail.com-6366f1?style=for-the-badge&logo=gmail)](mailto:feezakulsoom42@gmail.com)
 [![GitHub](https://img.shields.io/badge/GitHub-FEEZAKULSOOM-0ea5e9?style=for-the-badge&logo=github)](https://github.com/FEEZAKULSOOM)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-FEEZAKULSOOM-8b5cf6?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/feeza-kulsoom-82a801313)
 
