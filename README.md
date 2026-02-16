@@ -30,7 +30,6 @@
 |---------|-------------|
 | [✨ Features](#-features) | Key functionalities and capabilities |
 | [🚀 Live Demo](#-live-demo) | See it in action |
-| [📸 Screenshots](#-screenshots) | Visual preview |
 | [⚙️ Tech Stack](#️-tech-stack) | Technologies and libraries |
 | [📦 Installation](#-installation) | Setup and configuration guide |
 | [🔧 Configuration](#-configuration) | Environment setup |
@@ -71,7 +70,7 @@
 
 ### 🌐 **Experience the AI Assistant Live**
 
-**👉 [https://yourusername.github.io/ai-chat-assistant](https://yourusername.github.io/ai-chat-assistant)**
+**👉 [https://yourusername.github.io/ai-chat-assistant](https://feeza-chatbot.netlify.app/)**
 
 | Test Credentials | |
 |-----------------|-|
@@ -322,8 +321,6 @@ npm run deploy
 - **Responsive Images**: SVG icons for scalability
 - **CSS Variables**: Efficient theme switching
 - **Debounced Input**: Prevents excessive re-renders
-- **Lazy Loading**: Component-based code splitting
-
 ---
 
 ## 📄 License
@@ -336,15 +333,15 @@ MIT License © 2026 **AI Chat Assistant**
 
 If you like this project, please consider giving it a ⭐ on GitHub!
 
-[![GitHub stars](https://img.shields.io/github/stars/yourusername/ai-chat-assistant?style=social)](https://github.com/yourusername/ai-chat-assistant)
+[![GitHub stars](https://img.shields.io/github/stars/yourusername/ai-chat-assistant?style=social)](https://github.com/FEEZAKULSOOM/ai-chatbot)
 
 ---
 
 ### 📬 **Contact Me**
 
-[![Email](https://img.shields.io/badge/Email-your.email%40gmail.com-6366f1?style=for-the-badge&logo=gmail)](mailto:your.email@gmail.com)
-[![GitHub](https://img.shields.io/badge/GitHub-yourusername-0ea5e9?style=for-the-badge&logo=github)](https://github.com/yourusername)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Your_Name-8b5cf6?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/yourusername)
+[![Email](https://img.shields.io/badge/Email-your.email%40gmail.com-6366f1?style=for-the-badge&logo=gmail)](mailto:your.feezakulsoom42@gmail.com)
+[![GitHub](https://img.shields.io/badge/GitHub-yourusername-0ea5e9?style=for-the-badge&logo=github)](https://github.com/FEEZAKULSOOM)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Your_Name-8b5cf6?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/feeza-kulsoom-82a801313)
 
 ---
 
