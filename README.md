@@ -32,7 +32,6 @@
 | [🚀 Live Demo](#-live-demo) | See it in action |
 | [⚙️ Tech Stack](#️-tech-stack) | Technologies and libraries |
 | [📦 Installation](#-installation) | Setup and configuration guide |
-| [🔧 Configuration](#-configuration) | Environment setup |
 | [📁 Project Structure](#-project-structure) | File organization |
 | [🌐 API Integration](#-api-integration) | Groq API details |
 | [📄 License](#-license) | MIT License |
